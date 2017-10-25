@@ -4,11 +4,27 @@ import UIKit
 class ViewController: UIViewController {
     //# MARK: - IBOutlets
     @IBOutlet weak var labelNumberToDisplay: UILabel!
-    @IBOutlet weak var plusButton: UIButton!
-    @IBOutlet weak var plusSign: UILabel!
+    
+    @IBOutlet weak var plusSign: UILabel!    
+    
+    // Buttons
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var button5: UIButton!
+    @IBOutlet weak var button6: UIButton!
+    @IBOutlet weak var button7: UIButton!
+    @IBOutlet weak var button8: UIButton!
+    @IBOutlet weak var button9: UIButton!
+    @IBOutlet weak var button0: UIButton!
+    @IBOutlet weak var buttonPoint: UIButton!
     @IBOutlet weak var taxesButton: UIButton!
-    @IBOutlet weak var viewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet var deviceHeight: UIView!
+    @IBOutlet weak var plusButton: UIButton!
+    
+    var shortButtonsArray: [UIButton]!
+    var longButtonsArray: [UIButton]!
+    // Buttons
     
     //# MARK: - Properties
     var numberToDisplay: String = ""
@@ -24,15 +40,43 @@ class ViewController: UIViewController {
     //# MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+                
         self.quebecTaxesObj = QuebecTaxes()
         self.labelNumberToDisplay.text = self.informationToDisplay(theSum: self.addUpArray())
         self.totalAmount = self.addUpArray()
         if self.plusButton.alpha == 0.2 {
             self.plusSign.alpha = 1.0
         }
-        self.h = self.deviceHeight.frame.size.height
-        self.w = self.deviceHeight.frame.size.width + 170
+        
+        shortButtonsArray = [button1, button2, button3, button4, button5, button6, button7, button8, button9]
+        longButtonsArray = [button0, buttonPoint, taxesButton, plusButton]
+        setButtonStyle()
+
     }
+    
+    func setButtonStyle() {
+        for button in longButtonsArray {
+            button.titleLabel?.adjustsFontSizeToFitWidth = true
+            
+            //button.backgroundColor = .clear
+            button.backgroundColor = UIColor(red: 14/255, green: 59/255, blue: 144/255, alpha: 0.05)
+            button.layer.cornerRadius = 10
+            button.layer.borderWidth = 1
+            //button.layer.borderColor = UIColor(red: 14/255, green: 59/255, blue: 144/255, alpha: 0.5).cgColor
+            button.layer.borderColor = UIColor(red: 6/255, green: 147/255, blue: 35/255, alpha: 0.5).cgColor
+        }
+        
+        for button in shortButtonsArray {
+            button.titleLabel?.adjustsFontSizeToFitWidth = true
+            
+            //button.backgroundColor = .clear
+            button.backgroundColor = UIColor(red: 14/255, green: 59/255, blue: 144/255, alpha: 0.05)
+            button.layer.cornerRadius = (button.layer.frame.size.width / 2)
+            button.layer.borderWidth = 1
+            button.layer.borderColor = UIColor(red: 6/255, green: 147/255, blue: 35/255, alpha: 0.5).cgColor
+        }
+    }
+    
     
     //# MARK: - informationToDisplay
     func informationToDisplay(theSum: Float) -> String {
@@ -44,7 +88,9 @@ class ViewController: UIViewController {
         return "\(b)\n\(s)"
     }
     
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     //# MARK: -
     override func didReceiveMemoryWarning() {
@@ -54,28 +100,31 @@ class ViewController: UIViewController {
     //# MARK: - buttonsManager
     @IBAction func buttonsManager(_ sender: UIButton) {
         switch sender.tag {
-            case 10 :
-                if !self.decimalClicked {
-                    self.decimalClicked = true
-                    self.displayAmount(theString: ".")
-                }
-            case 11 :
-                if sender.alpha != 0.2 {
-                    self.addingTotal()
-                    sender.alpha = 0.2
-                    self.taxesButton.alpha = 0.2
-                }
-            case 12 :
-                if sender.alpha != 0.2 {
-                    self.addingTotalWithTaxes()
-                    sender.alpha = 0.2
-                    self.plusButton.alpha = 0.2
-                }
-            default:
-                self.plusButton.alpha = 1.0
-                self.taxesButton.alpha = 1.0
-                self.plusSign.alpha = 0.0
-                self.displayAmount(theString: String(sender.tag))
+        case 0 ... 9 :
+            self.plusButton.alpha = 1.0
+            self.taxesButton.alpha = 1.0
+            self.plusSign.alpha = 0.0
+            self.displayAmount(theString: String(sender.tag))
+            
+        case 10 :
+            if !self.decimalClicked {
+                self.decimalClicked = true
+                self.displayAmount(theString: ".")
+            }
+        case 11 :
+            if sender.alpha != 0.2 {
+                self.addingTotal()
+                sender.alpha = 0.2
+                self.taxesButton.alpha = 0.2
+            }
+        case 12 :
+            if sender.alpha != 0.2 {
+                self.addingTotalWithTaxes()
+                sender.alpha = 0.2
+                self.plusButton.alpha = 0.2
+            }
+        default:
+            break
         }
     }
     
@@ -149,8 +198,6 @@ class ViewController: UIViewController {
         return amountToReturn
     }
 }
-//=================================
-
 
 
 

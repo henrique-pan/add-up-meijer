@@ -5,6 +5,7 @@ import Foundation
 class TableController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
     //# MARK: - IBOutlets
     @IBOutlet weak var simplePicker: UIPickerView!
+    @IBOutlet weak var buttonSetBudget: UIButton!
     
     //# MARK: - Properties
     var data = ["10"]
@@ -20,7 +21,18 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         let theRow: Int = Singleton.sharedInstance.theBudget / 10 - 1
         self.simplePicker.selectRow(theRow, inComponent: 0, animated: true)
+        setButtonStyle()
     }
+    
+    func setButtonStyle() {
+            //button.backgroundColor = .clear
+            buttonSetBudget.backgroundColor = UIColor(red: 14/255, green: 59/255, blue: 144/255, alpha: 0.05)
+            buttonSetBudget.layer.cornerRadius = (buttonSetBudget.layer.frame.size.width / 2)
+            buttonSetBudget.layer.borderWidth = 1
+            buttonSetBudget.layer.borderColor = UIColor(red: 6/255, green: 147/255, blue: 35/255, alpha: 0.5).cgColor
+        
+    }
+
 
     //# MARK: - didReceiveMemoryWarning
     override func didReceiveMemoryWarning() {
@@ -52,6 +64,10 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
             Singleton.sharedInstance.saveArray()
             tableView.deleteRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.automatic)
         }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     //# MARK: - numberOfComponents
@@ -88,6 +104,9 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
     //# MARK: - settingBudget
     @IBAction func settingBudget(_ sender: UIButton) {
         Singleton.sharedInstance.setBudget(aBudget: self.budget)
+    }
+    @IBAction func backToMain(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 //=================================

@@ -1,8 +1,7 @@
 //=================================
 import UIKit
 //=================================
-class Singleton
-{
+class Singleton {
     //# MARK: - Properties
     var arrayOfItems: [Float] = []
     let defaults = UserDefaults.standard

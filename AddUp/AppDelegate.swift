@@ -111,6 +111,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         completionHandler(handledShortCutItem)
 
+        sleep(3)
         
     }
 }
