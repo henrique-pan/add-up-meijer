@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B5B87501F8415D3001B3B65 /* icons8-Trash Can-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5B874F1F8415D3001B3B65 /* icons8-Trash Can-26.png */; };
 		9B5B87521F842B17001B3B65 /* meijer_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5B87511F842B17001B3B65 /* meijer_logo.png */; };
 		9B87CB4D1FA1109300CA65DB /* AddUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87CB4C1FA1109300CA65DB /* AddUp.png */; };
+		9B87CB511FA12AA500CA65DB /* icons8-Back Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87CB4E1FA12AA500CA65DB /* icons8-Back Filled-100.png */; };
+		9B87CB521FA12AA500CA65DB /* icons8-Menu Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87CB4F1FA12AA500CA65DB /* icons8-Menu Filled-100.png */; };
+		9B87CB531FA12AA500CA65DB /* icons8-Trash Can-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B87CB501FA12AA500CA65DB /* icons8-Trash Can-26.png */; };
 		9B94CC0D1F9FB5A100078018 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B94CC0C1F9FB5A100078018 /* background.png */; };
-		9B94CC101F9FBD5B00078018 /* icons8-Back Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B94CC0E1F9FBD5B00078018 /* icons8-Back Filled-100.png */; };
-		9B94CC111F9FBD5B00078018 /* icons8-Menu Filled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B94CC0F1F9FBD5B00078018 /* icons8-Menu Filled-100.png */; };
 		9B94CC131F9FDFB100078018 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B94CC121F9FDFB100078018 /* launch.png */; };
 		9D355DC81D70946100D4D755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4DEC4F1D6DDE39001490B9 /* Main.storyboard */; };
 		9D4DEC4C1D6DDE39001490B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4DEC4B1D6DDE39001490B9 /* AppDelegate.swift */; };
@@ -25,12 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B5B874F1F8415D3001B3B65 /* icons8-Trash Can-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Trash Can-26.png"; path = "Images/icons8-Trash Can-26.png"; sourceTree = "<group>"; };
 		9B5B87511F842B17001B3B65 /* meijer_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = meijer_logo.png; path = Images/meijer_logo.png; sourceTree = "<group>"; };
 		9B87CB4C1FA1109300CA65DB /* AddUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddUp.png; path = Images/AddUp.png; sourceTree = "<group>"; };
+		9B87CB4E1FA12AA500CA65DB /* icons8-Back Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Back Filled-100.png"; path = "Images/icons/icons8-Back Filled-100.png"; sourceTree = "<group>"; };
+		9B87CB4F1FA12AA500CA65DB /* icons8-Menu Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Menu Filled-100.png"; path = "Images/icons/icons8-Menu Filled-100.png"; sourceTree = "<group>"; };
+		9B87CB501FA12AA500CA65DB /* icons8-Trash Can-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Trash Can-26.png"; path = "Images/icons/icons8-Trash Can-26.png"; sourceTree = "<group>"; };
 		9B94CC0C1F9FB5A100078018 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Images/background.png; sourceTree = "<group>"; };
-		9B94CC0E1F9FBD5B00078018 /* icons8-Back Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Back Filled-100.png"; path = "Images/icons8-Back Filled-100.png"; sourceTree = "<group>"; };
-		9B94CC0F1F9FBD5B00078018 /* icons8-Menu Filled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Menu Filled-100.png"; path = "Images/icons8-Menu Filled-100.png"; sourceTree = "<group>"; };
 		9B94CC121F9FDFB100078018 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = Images/launch.png; sourceTree = "<group>"; };
 		9D4DEC481D6DDE38001490B9 /* AddUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4DEC4B1D6DDE39001490B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,10 +102,10 @@
 		9DC593451D787D9C00D65655 /* icons */ = {
 			isa = PBXGroup;
 			children = (
-				9B94CC0E1F9FBD5B00078018 /* icons8-Back Filled-100.png */,
-				9B94CC0F1F9FBD5B00078018 /* icons8-Menu Filled-100.png */,
 				9B5B87511F842B17001B3B65 /* meijer_logo.png */,
-				9B5B874F1F8415D3001B3B65 /* icons8-Trash Can-26.png */,
+				9B87CB4E1FA12AA500CA65DB /* icons8-Back Filled-100.png */,
+				9B87CB4F1FA12AA500CA65DB /* icons8-Menu Filled-100.png */,
+				9B87CB501FA12AA500CA65DB /* icons8-Trash Can-26.png */,
 			);
 			name = icons;
 			sourceTree = "<group>";
@@ -170,14 +170,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B87CB531FA12AA500CA65DB /* icons8-Trash Can-26.png in Resources */,
 				9B87CB4D1FA1109300CA65DB /* AddUp.png in Resources */,
 				9B94CC0D1F9FB5A100078018 /* background.png in Resources */,
-				9B94CC111F9FBD5B00078018 /* icons8-Menu Filled-100.png in Resources */,
 				9B5B87521F842B17001B3B65 /* meijer_logo.png in Resources */,
 				9B94CC131F9FDFB100078018 /* launch.png in Resources */,
-				9B94CC101F9FBD5B00078018 /* icons8-Back Filled-100.png in Resources */,
-				9B5B87501F8415D3001B3B65 /* icons8-Trash Can-26.png in Resources */,
 				9D4DEC561D6DDE39001490B9 /* LaunchScreen.storyboard in Resources */,
+				9B87CB511FA12AA500CA65DB /* icons8-Back Filled-100.png in Resources */,
+				9B87CB521FA12AA500CA65DB /* icons8-Menu Filled-100.png in Resources */,
 				9D355DC81D70946100D4D755 /* Main.storyboard in Resources */,
 				9D4DEC531D6DDE39001490B9 /* Assets.xcassets in Resources */,
 			);
