@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2EE32D1FA2D80000285DBC /* MichiganTaxe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2EE32C1FA2D80000285DBC /* MichiganTaxe.swift */; };
+		BE2EE32F1FA2DB8100285DBC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2EE32E1FA2DB8100285DBC /* Singleton.swift */; };
 		BE32E3C91FA1737A003FE2EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32E3C81FA1737A003FE2EE /* AppDelegate.swift */; };
 		BE32E3CB1FA1737A003FE2EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32E3CA1FA1737A003FE2EE /* ViewController.swift */; };
 		BE32E3CE1FA1737A003FE2EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE32E3CC1FA1737A003FE2EE /* Main.storyboard */; };
 		BE32E3D01FA1737A003FE2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE32E3CF1FA1737A003FE2EE /* Assets.xcassets */; };
 		BE32E3D31FA1737A003FE2EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE32E3D11FA1737A003FE2EE /* LaunchScreen.storyboard */; };
+		BE32E3E11FA1743B003FE2EE /* back-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE32E3DB1FA1743B003FE2EE /* back-icon.png */; };
+		BE32E3E21FA1743B003FE2EE /* trash-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE32E3DC1FA1743B003FE2EE /* trash-icon.png */; };
+		BE32E3E31FA1743B003FE2EE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = BE32E3DD1FA1743B003FE2EE /* background.png */; };
+		BE32E3E41FA1743B003FE2EE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BE32E3DE1FA1743B003FE2EE /* logo.png */; };
+		BE32E3E51FA1743B003FE2EE /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = BE32E3DF1FA1743B003FE2EE /* launch.png */; };
+		BE32E3E61FA1743B003FE2EE /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE32E3E01FA1743B003FE2EE /* menu-icon.png */; };
+		BE32E3E81FA1989B003FE2EE /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32E3E71FA1989B003FE2EE /* TableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE2EE32C1FA2D80000285DBC /* MichiganTaxe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MichiganTaxe.swift; sourceTree = "<group>"; };
+		BE2EE32E1FA2DB8100285DBC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		BE32E3C51FA1737A003FE2EE /* add-up-meijer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "add-up-meijer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE32E3C81FA1737A003FE2EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE32E3CA1FA1737A003FE2EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,13 @@
 		BE32E3CF1FA1737A003FE2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE32E3D21FA1737A003FE2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE32E3D41FA1737A003FE2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE32E3DB1FA1743B003FE2EE /* back-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon.png"; sourceTree = "<group>"; };
+		BE32E3DC1FA1743B003FE2EE /* trash-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trash-icon.png"; sourceTree = "<group>"; };
+		BE32E3DD1FA1743B003FE2EE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		BE32E3DE1FA1743B003FE2EE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		BE32E3DF1FA1743B003FE2EE /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		BE32E3E01FA1743B003FE2EE /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
+		BE32E3E71FA1989B003FE2EE /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,31 @@
 		BE32E3C71FA1737A003FE2EE /* add-up-meijer */ = {
 			isa = PBXGroup;
 			children = (
+				BE32E3DA1FA173CD003FE2EE /* images */,
 				BE32E3C81FA1737A003FE2EE /* AppDelegate.swift */,
 				BE32E3CA1FA1737A003FE2EE /* ViewController.swift */,
+				BE32E3E71FA1989B003FE2EE /* TableController.swift */,
+				BE2EE32C1FA2D80000285DBC /* MichiganTaxe.swift */,
+				BE2EE32E1FA2DB8100285DBC /* Singleton.swift */,
 				BE32E3CC1FA1737A003FE2EE /* Main.storyboard */,
 				BE32E3CF1FA1737A003FE2EE /* Assets.xcassets */,
 				BE32E3D11FA1737A003FE2EE /* LaunchScreen.storyboard */,
 				BE32E3D41FA1737A003FE2EE /* Info.plist */,
 			);
 			path = "add-up-meijer";
+			sourceTree = "<group>";
+		};
+		BE32E3DA1FA173CD003FE2EE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BE32E3DB1FA1743B003FE2EE /* back-icon.png */,
+				BE32E3DD1FA1743B003FE2EE /* background.png */,
+				BE32E3DF1FA1743B003FE2EE /* launch.png */,
+				BE32E3DE1FA1743B003FE2EE /* logo.png */,
+				BE32E3E01FA1743B003FE2EE /* menu-icon.png */,
+				BE32E3DC1FA1743B003FE2EE /* trash-icon.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +158,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE32E3E51FA1743B003FE2EE /* launch.png in Resources */,
 				BE32E3D31FA1737A003FE2EE /* LaunchScreen.storyboard in Resources */,
+				BE32E3E31FA1743B003FE2EE /* background.png in Resources */,
 				BE32E3D01FA1737A003FE2EE /* Assets.xcassets in Resources */,
+				BE32E3E61FA1743B003FE2EE /* menu-icon.png in Resources */,
 				BE32E3CE1FA1737A003FE2EE /* Main.storyboard in Resources */,
+				BE32E3E41FA1743B003FE2EE /* logo.png in Resources */,
+				BE32E3E11FA1743B003FE2EE /* back-icon.png in Resources */,
+				BE32E3E21FA1743B003FE2EE /* trash-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE32E3E81FA1989B003FE2EE /* TableController.swift in Sources */,
 				BE32E3CB1FA1737A003FE2EE /* ViewController.swift in Sources */,
 				BE32E3C91FA1737A003FE2EE /* AppDelegate.swift in Sources */,
+				BE2EE32F1FA2DB8100285DBC /* Singleton.swift in Sources */,
+				BE2EE32D1FA2D80000285DBC /* MichiganTaxe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hpan.add-up-meijer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hpan.add-up-meijer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
