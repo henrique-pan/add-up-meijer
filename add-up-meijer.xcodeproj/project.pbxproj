@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0B76CC1FAA4A75003F3B5D /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0B76CB1FAA4A75003F3B5D /* logo2.png */; };
 		BE2EE32D1FA2D80000285DBC /* MichiganTaxe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2EE32C1FA2D80000285DBC /* MichiganTaxe.swift */; };
 		BE2EE32F1FA2DB8100285DBC /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2EE32E1FA2DB8100285DBC /* Singleton.swift */; };
 		BE32E3C91FA1737A003FE2EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32E3C81FA1737A003FE2EE /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE0B76CB1FAA4A75003F3B5D /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 		BE2EE32C1FA2D80000285DBC /* MichiganTaxe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MichiganTaxe.swift; sourceTree = "<group>"; };
 		BE2EE32E1FA2DB8100285DBC /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		BE32E3C51FA1737A003FE2EE /* add-up-meijer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "add-up-meijer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 		BE32E3DA1FA173CD003FE2EE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BE0B76CB1FAA4A75003F3B5D /* logo2.png */,
 				BE32E3DB1FA1743B003FE2EE /* back-icon.png */,
 				BE32E3DD1FA1743B003FE2EE /* background.png */,
 				BE32E3DF1FA1743B003FE2EE /* launch.png */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE32E3E51FA1743B003FE2EE /* launch.png in Resources */,
+				BE0B76CC1FAA4A75003F3B5D /* logo2.png in Resources */,
 				BE32E3D31FA1737A003FE2EE /* LaunchScreen.storyboard in Resources */,
 				BE32E3E31FA1743B003FE2EE /* background.png in Resources */,
 				BE32E3D01FA1737A003FE2EE /* Assets.xcassets in Resources */,

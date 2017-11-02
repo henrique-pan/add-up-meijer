@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         displayLabel(text: informationToDisplay(theSum: amount))
         totalAmount = amount
         
-        if plusButtons[0].alpha == 0.2 {
+        if plusButtons[0].alpha == 0.5 {
             plusSignHidden(newStatus: false)
         }        
         
@@ -95,16 +95,16 @@ class ViewController: UIViewController {
                 displayAmount(theString: ".")
             }
         case 11 :
-            if sender.alpha != 0.2 {
+            if sender.alpha != 0.5 {
                 addingTotal()
-                setAlphaToPlusButtons(0.2)
-                setAlphaToPlusTaxeButtons(0.2)
+                setAlphaToPlusButtons(0.5)
+                setAlphaToPlusTaxeButtons(0.5)
             }
         case 12 :
-            if sender.alpha != 0.2 {
+            if sender.alpha != 0.5 {
                 addingTotalWithTaxes()
-                setAlphaToPlusButtons(0.2)
-                setAlphaToPlusTaxeButtons(0.2)
+                setAlphaToPlusButtons(0.5)
+                setAlphaToPlusTaxeButtons(0.5)
             }
         default:
             break
@@ -165,8 +165,8 @@ class ViewController: UIViewController {
             self.decimalClicked = false
             self.decimalCounter = -1
             self.totalAmount = 0.00
-            self.setAlphaToPlusButtons(0.2)
-            self.setAlphaToPlusTaxeButtons(0.2)
+            self.setAlphaToPlusButtons(0.5)
+            self.setAlphaToPlusTaxeButtons(0.5)
             self.plusSignHidden(newStatus: true)
             Singleton.sharedInstance.emptyArray()
         }

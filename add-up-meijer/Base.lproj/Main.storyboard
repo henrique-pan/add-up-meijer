@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
         <array key="BradleyHand-Bold.ttf">
             <string>BradleyHandITCTT-Bold</string>
         </array>
@@ -110,14 +113,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YH-rF-MoF" userLabel="displayView">
                                 <rect key="frame" x="0.0" y="47.5" width="320" height="96"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVt-Og-WPJ">
-                                        <rect key="frame" x="20" y="31.5" width="69.5" height="34"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVt-Og-WPJ">
+                                        <rect key="frame" x="20" y="34.5" width="60.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlL-ZV-8Dy" userLabel="clearButton">
-                                        <rect key="frame" x="262" y="32" width="33" height="33"/>
+                                        <rect key="frame" x="262" y="31" width="33" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="33" id="i0j-5C-XHj"/>
                                             <constraint firstAttribute="height" constant="33" id="vef-dG-NM0"/>
@@ -128,11 +131,11 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYs-7T-AGe" userLabel="plusSign">
-                                        <rect key="frame" x="20" y="6" width="21" height="22"/>
+                                        <rect key="frame" x="20" y="9" width="13" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="uVG-WQ-2Sa"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -224,7 +227,7 @@
                                                 <color key="backgroundColor" red="0.98454672887284767" green="0.90186188121858457" blue="0.29732405598367978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                                 <state key="normal" title="5">
-                                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEi-9q-iA8"/>
@@ -235,7 +238,7 @@
                                                 <color key="backgroundColor" red="0.98454672887284767" green="0.90186188121858457" blue="0.29732405598367978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                                 <state key="normal" title="8">
-                                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JNh-sD-8an"/>
@@ -246,7 +249,7 @@
                                                 <color key="backgroundColor" red="0.98454672887284767" green="0.90186188121858457" blue="0.29732405598367978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                                 <state key="normal" title="2">
-                                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nhK-YF-tYd"/>
@@ -257,7 +260,7 @@
                                                 <color key="backgroundColor" red="0.98454672887284767" green="0.90186188121858457" blue="0.29732405598367978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVQ-Dw-7cy"/>
@@ -268,7 +271,7 @@
                                                 <color key="backgroundColor" red="0.98454672887284767" green="0.90186188121858457" blue="0.29732405598367978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                                 <state key="normal" title="3">
-                                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkN-Mz-qZi"/>
@@ -279,7 +282,7 @@
                                                 <color key="backgroundColor" red="0.98454672887284767" green="0.90186188121858457" blue="0.29732405598367978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                                 <state key="normal" title="6">
-                                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e05-Id-tNJ"/>
@@ -290,7 +293,7 @@
                                                 <color key="backgroundColor" red="0.98454672887284767" green="0.90186188121858457" blue="0.29732405598367978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                                 <state key="normal" title="4">
-                                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBu-QX-SFz"/>
@@ -301,7 +304,7 @@
                                                 <color key="backgroundColor" red="0.98454672887284767" green="0.90186188121858457" blue="0.29732405598367978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                                 <state key="normal" title="7">
-                                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j70-qh-AP0"/>
@@ -312,7 +315,7 @@
                                                 <color key="backgroundColor" red="0.98454672887284767" green="0.90186188121858457" blue="0.29732405598367978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                                 <state key="normal" title="9">
-                                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abZ-5e-tSk"/>
@@ -482,12 +485,12 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <button opaque="NO" clipsSubviews="YES" alpha="0.20000000000000001" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xed-Bi-N4m">
+                                    <button opaque="NO" clipsSubviews="YES" alpha="0.5" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xed-Bi-N4m">
                                         <rect key="frame" x="36.5" y="3.5" width="113" height="33.5"/>
                                         <color key="backgroundColor" red="0.98454672889999995" green="0.90186188119999999" blue="0.297324056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                         <state key="normal" title="+">
-                                            <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MRS-Xg-tTL"/>
@@ -498,18 +501,18 @@
                                         <color key="backgroundColor" red="0.98454672889999995" green="0.90186188119999999" blue="0.297324056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                         <state key="normal" title="0">
-                                            <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OiW-T8-7X7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" clipsSubviews="YES" alpha="0.20000000000000001" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i55-1a-BKC">
+                                    <button opaque="NO" clipsSubviews="YES" alpha="0.5" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i55-1a-BKC">
                                         <rect key="frame" x="169" y="4" width="113" height="33.5"/>
                                         <color key="backgroundColor" red="0.98454672889999995" green="0.90186188119999999" blue="0.297324056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                         <state key="normal" title="+ Tx">
-                                            <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QrB-LV-rqj"/>
@@ -520,7 +523,7 @@
                                         <color key="backgroundColor" red="0.98454672889999995" green="0.90186188119999999" blue="0.297324056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                         <state key="normal" title=".">
-                                            <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8B-Sf-DZM"/>
@@ -1189,7 +1192,7 @@
                                 </variation>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.80678492784500122" green="0.72302109003067017" blue="0.00010976217890856788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.91910570859909058" green="0.90898489952087402" blue="0.065235748887062073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tar-KQ-2eI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2as-yl-Tds"/>
                             <constraint firstItem="MRr-TB-MQb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2dV-Co-cip"/>
@@ -1494,7 +1497,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
                                 <state key="normal" title="Set">
-                                    <color key="titleColor" red="0.070588235289999995" green="0.3294117647" blue="0.81960784310000001" alpha="0.74040948279999996" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1636,7 +1639,7 @@
                                 </connections>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.8067849278" green="0.72302109000000003" blue="0.0001097621789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Mcb-Ga-vj7" firstAttribute="height" secondItem="SVB-qs-8pC" secondAttribute="height" multiplier="0.1" id="3br-17-kKR"/>
                             <constraint firstItem="fhw-gU-WaF" firstAttribute="width" secondItem="SVB-qs-8pC" secondAttribute="width" multiplier="0.15" id="4f1-a2-Vvs"/>
