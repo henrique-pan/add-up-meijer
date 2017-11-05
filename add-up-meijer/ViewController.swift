@@ -14,12 +14,12 @@ class ViewController: UIViewController {
     //Buttons    
     @IBOutlet var shortButtons: [UIButton]!
     @IBOutlet var longButtons: [UIButton]!
-    @IBOutlet var plusButtons: [UIButton]!
-    @IBOutlet var plusTaxeButtons: [UIButton]!
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var plusTaxeButton: UIButton!
     //Buttons
     //Labels
-    @IBOutlet var plusSignLabels: [UILabel]!
-    @IBOutlet var displayLabels: [UILabel]!
+    @IBOutlet weak var plusSignLabel: UILabel!
+    @IBOutlet weak var displayLabel: UILabel!
     //Labels
     
     //MARK: Properties
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         displayLabel(text: informationToDisplay(theSum: amount))
         totalAmount = amount
         
-        if plusButtons[0].alpha == 0.5 {
+        if plusButton.alpha == 0.5 {
             plusSignHidden(newStatus: false)
         }        
         
@@ -188,36 +188,28 @@ class ViewController: UIViewController {
     }
     
     private func displayLabel(text: String!) {
-        for label in displayLabels {
-            label.text = text
-        }
+            displayLabel.text = text
     }
     
     private func plusSignHidden(newStatus: Bool!) {
-        for label in plusSignLabels {
-            label.isHidden = newStatus
-        }
+        plusSignLabel.isHidden = newStatus
     }
     
     private func setAlphaToPlusButtons(_ alpha: CGFloat!) {
-        for button in plusButtons {
-            button.alpha = alpha
-            if alpha < 1 {
-                button.isEnabled = false
-            } else {
-                button.isEnabled = true
-            }
+        plusButton.alpha = alpha
+        if alpha < 1 {
+            plusButton.isEnabled = false
+        } else {
+            plusButton.isEnabled = true
         }
     }
     
     private func setAlphaToPlusTaxeButtons(_ alpha: CGFloat!) {
-        for button in plusTaxeButtons {
-            button.alpha = alpha
-            if alpha < 1 {
-                button.isEnabled = false
-            } else {
-                button.isEnabled = true
-            }
+        plusTaxeButton.alpha = alpha
+        if alpha < 1 {
+            plusTaxeButton.isEnabled = false
+        } else {
+            plusTaxeButton.isEnabled = true
         }
     }
 }

@@ -14,7 +14,7 @@ class TableController: UIViewController {
     //MARK: Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var picker: UIPickerView!
-    @IBOutlet var setButtons: [UIButton]!
+    @IBOutlet var setButton: UIButton!
     
     //# MARK: - Properties
     var data = ["10"]
@@ -47,16 +47,13 @@ class TableController: UIViewController {
     }
     
     func setButtonStyle() {
+        setButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        setButton.backgroundColor = UIColor(red: 14/255, green: 59/255, blue: 144/255, alpha: 0.05)
+        setButton.layer.cornerRadius = (setButton.layer.frame.size.width / 2)
+        setButton.layer.borderWidth = 1
+        setButton.layer.borderColor = UIColor(red: 6/255, green: 147/255, blue: 35/255, alpha: 0.5).cgColor
         
-        for button in setButtons {
-            button.titleLabel?.adjustsFontSizeToFitWidth = true
-            button.backgroundColor = UIColor(red: 14/255, green: 59/255, blue: 144/255, alpha: 0.05)
-            button.layer.cornerRadius = (button.layer.frame.size.width / 2)
-            button.layer.borderWidth = 1
-            button.layer.borderColor = UIColor(red: 6/255, green: 147/255, blue: 35/255, alpha: 0.5).cgColor
-            
-            button.setBackgroundColor(color: UIColor.white, forState: UIControlState.highlighted)
-        }
+        setButton.setBackgroundColor(color: UIColor.white, forState: UIControlState.highlighted)
     }
     
     @IBAction func backToMain(_ sender: UIButton) {
@@ -98,7 +95,7 @@ extension TableController: UITableViewDelegate, UITableViewDataSource {
         
         cell.textLabel?.textColor = UIColor.white
         cell.backgroundColor = UIColor.clear
-        cell.textLabel?.font = UIFont(name: "Bradley Hand", size: 25)
+        cell.textLabel?.font = UIFont(name: "Arial", size: 25)
         
         return cell
     }
